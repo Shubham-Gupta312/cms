@@ -76,6 +76,6 @@ class AuthController extends BaseController
     public function logout(){
         session_unset();
         session()->destroy();
-        return redirect()->to(base_url('login'));
+        return redirect()->to(base_url('admin/login'));
     }
 }
